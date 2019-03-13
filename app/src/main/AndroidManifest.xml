@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.danganguan">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".LoginActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".yuyueActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".jijianActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".NewsContentActivity" />
+        <activity
+            android:name=".SelectPicPopupWindow"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity android:name=".RegistActivity" />
+        <activity android:name=".GaimiActivity" />
+        <activity android:name=".GainiActivity" />
+        <activity android:name=".GaitouActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.danganguan.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".gdgsActivity" />
+        <activity android:name=".hdzxActivity" />
+        <activity android:name=".xxggActivity" />
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MyyyActivity" />
+        <activity android:name=".wuliuActivity" />
+        <activity android:name=".wangjiActivity"></activity>
+    </application>
+
+</manifest>

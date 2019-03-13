@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:br="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/xxgg"
+        android:focusableInTouchMode="true"
+        android:id="@+id/xxggLayout">
+
+
+        <TextView
+            android:id="@+id/yuyueText"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/yuyueText2"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/yuyueText2"
+            android:layout_marginTop="17dp"
+            android:focusableInTouchMode="false"
+            android:gravity="center_horizontal"
+            android:text="信息公告"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/yuyueText2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="false"
+            android:layout_below="@+id/yuyueText"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal"
+            android:text="INFORMATION"
+            android:textSize="15dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/xxggLayout"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/dayy"
+        android:orientation="horizontal"
+        android:id="@+id/dayyLayout">
+
+        <TextView
+            android:id="@+id/jijianText"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:focusableInTouchMode="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:gravity="center_horizontal"
+            android:text="档案预约"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+        <TextView
+            android:id="@+id/jijianText2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jijianText"
+            android:layout_centerHorizontal="true"
+            android:focusableInTouchMode="false"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal"
+            android:text="ARCHIVAL RESERVATION"
+            android:textSize="15dp"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/gdgsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_alignEnd="@+id/dayyLayout"
+        android:layout_alignRight="@+id/dayyLayout"
+        android:layout_below="@+id/dayyLayout"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/gdgs"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/gdgs"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:gravity="center_horizontal"
+            android:focusableInTouchMode="false"
+            android:text="校园故事"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+        <TextView
+            android:id="@+id/gdgs2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gdgs"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="HEBUT STORY"
+            android:focusableInTouchMode="false"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/hdzxLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_alignLeft="@+id/gdgsLayout"
+        android:layout_alignStart="@+id/gdgsLayout"
+        android:layout_below="@+id/gdgsLayout"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/hdzx"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/hdzx"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:focusableInTouchMode="false"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:gravity="center_horizontal"
+            android:text="互动咨询"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/hdzx2"
+            android:layout_width="120dp"
+            android:focusableInTouchMode="false"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hdzx"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="INTERACIVE CONSULTATION"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+
+    </RelativeLayout>
+</LinearLayout>

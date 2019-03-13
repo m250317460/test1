@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <View
+        android:id="@+id/paddingView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#000"
+        />
+    <com.example.danganguan.TitleLayout2
+        android:id="@+id/titlelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paddingView1"
+        android:background="#00ccff">
+
+    </com.example.danganguan.TitleLayout2>
+
+    <com.example.danganguan.CircleImageView
+        android:id="@+id/GaitouImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/titlelayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:src="@drawable/wmine" />
+
+    <Button
+        android:id="@+id/take"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/GaitouImage"
+        android:layout_marginLeft="72dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/tabtop1"
+        android:text="拍照" />
+
+    <Button
+        android:id="@+id/choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/take"
+        android:layout_marginLeft="65dp"
+        android:layout_marginStart="65dp"
+        android:layout_toEndOf="@+id/take"
+        android:layout_toRightOf="@+id/take"
+        android:background="@drawable/tabtop1"
+        android:text="相册" />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/shape_corners"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+    </com.youth.banner.Banner>
+
+<android.support.v4.widget.SwipeRefreshLayout 
+        android:id="@+id/SRlayout"
+        android:orientation="vertical"
+        android:background="#f5f5f5"
+        android:layout_below="@+id/banner"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/news_title_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/paddingView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#000"
+        />
+    <com.example.danganguan.TitleLayout2
+        android:id="@+id/titlelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paddingView1"
+        android:background="#00ccff"/>
+    <com.example.danganguan.BorderRelativeLayout
+        android:id="@+id/L1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/titlelayout1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@id/name"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="right|center_vertical"
+            android:text="原密码："/>
+
+        <EditText
+            android:id="@+id/etjiumi"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:layout_alignParentTop="true"
+            android:cursorVisible="true"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:textCursorDrawable="@drawable/edit_cursor_color"
+            android:layout_toEndOf="@+id/name"
+            android:layout_toRightOf="@+id/name" />
+
+
+    </com.example.danganguan.BorderRelativeLayout>
+    <com.example.danganguan.BorderRelativeLayout
+        android:id="@+id/L2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/L1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:maxLines="1"
+            android:gravity="right|center_vertical"
+            android:text="新密码："
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etgaimi"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:layout_alignParentTop="true"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@drawable/edit_cursor_color"
+            android:layout_toRightOf="@+id/number"
+            android:layout_toEndOf="@+id/number"/>
+    </com.example.danganguan.BorderRelativeLayout>
+    <com.example.danganguan.BorderRelativeLayout
+        android:id="@+id/L3"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/L2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/idcard"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="right"
+            android:maxLines="1"
+            android:text="确认："
+
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etgaimi2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:layout_toEndOf="@id/idcard"
+            android:layout_toRightOf="@+id/idcard"
+            android:textCursorDrawable="@drawable/edit_cursor_color" />
+    </com.example.danganguan.BorderRelativeLayout>
+
+    <Button
+        android:id="@+id/Gaimi"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etgaimi"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="#00CCFF"
+        android:text="确 定"
+        android:textColor="#FFFFFFFF" />
+</LinearLayout>

@@ -1,0 +1,39 @@
+<com.example.danganguan.BorderRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:singleLine="true"
+    android:background="@drawable/shape_corners"
+   >
+
+    <TextView
+        android:id="@+id/news_title"
+        android:layout_width="240dp"
+        android:layout_height="75dp"
+        android:layout_toLeftOf="@+id/news_img"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/news_time"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_toLeftOf="@+id/news_img"
+        android:layout_alignParentBottom="true"
+         />
+
+    <ImageView
+        android:id="@+id/news_img"
+        android:layout_width="95dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        app:srcCompat="@color/colorAccent" />
+</com.example.danganguan.BorderRelativeLayout>

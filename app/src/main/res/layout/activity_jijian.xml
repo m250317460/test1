@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#f5f5f5"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/paddingView1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#00ccff"
+            />
+        <com.example.danganguan.TitleLayout2
+            android:id="@+id/titlelayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/paddingView1"
+            android:background="#00ccff">
+
+        </com.example.danganguan.TitleLayout2>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_corners"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="收货人：" />
+
+            <EditText
+                android:id="@+id/etname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:textCursorDrawable="@drawable/edit_cursor_color"
+                android:cursorVisible="true"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_corners"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/phonum"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="手机号码：" />
+
+            <EditText
+                android:id="@+id/etphonum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:textCursorDrawable="@drawable/edit_cursor_color"
+                android:layout_weight="1"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:inputType="textPersonName"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_corners"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/area"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="所在区域：" />
+
+            <TextView
+                android:id="@+id/etarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:textCursorDrawable="@drawable/edit_cursor_color"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_corners"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/xxarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@drawable/edit_cursor_color"
+                android:ems="10"
+                android:hint="详细地址"
+                android:inputType="textPersonName"
+                />
+        </LinearLayout>
+        <ExpandableListView
+            android:id="@+id/exlist_lol"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/jjqueren"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:layout_marginTop="20sp"
+        android:background="#00ccff"
+        android:textColor="#FFFFFF"
+        android:text="确认" />
+</RelativeLayout>

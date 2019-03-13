@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/paddingView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#000000"
+        />
+    <com.example.danganguan.TitleLayout
+        android:id="@+id/titlelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/dengluImg"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/icon"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:text="档案馆服务"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etshoujihao"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="请输入手机号"
+            android:background="@drawable/edit_background"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etmima"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/etshoujihao"
+            android:layout_alignStart="@+id/etshoujihao"
+            android:layout_below="@+id/etshoujihao"
+            android:ems="10"
+            android:background="@drawable/edit_background"
+            android:hint="请输入密码"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnwangji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/login"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="22dp"
+            android:background="#00000000"
+            android:text="忘记密码"
+            android:textColor="#00CCFF" />
+
+        <Button
+            android:id="@+id/btnzhuce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnwangji"
+            android:layout_alignBottom="@+id/btnwangji"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:background="#00000000"
+            android:text="注册"
+            android:textColor="#00CCFF" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etmima"
+            android:layout_alignStart="@+id/etmima"
+            android:layout_below="@+id/etmima"
+            android:layout_marginTop="16dp"
+            android:background="#00CCFF"
+            android:text="登 录"
+            android:textColor="#FFFFFFFF" />
+    </RelativeLayout>
+</LinearLayout>
